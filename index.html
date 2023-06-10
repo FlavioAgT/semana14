@@ -11,13 +11,56 @@
     <header>
         <h1>JSON-server</h1>
         <h3>Administra tus clientes</h3>
-        <div class="button-box">
+        <div class="buttonBox">
             <button>Clientes</button>
             <button>Nuevo cliente</button>
         </div>
     </header>
     <main>
-        
+        <section class="clientList">
+            <h2>Clientes</h2>
+            <div class="container">
+                <div class="column columnTitle">
+                    <h4>Nombre cliente</h4>
+                    <h4>Número</h4>
+                    <h4>Empresa</h4>
+                    <h4>Acciones</h4>
+                </div>
+            </div>
+        </section>
+        <section class="clientNew">
+            <h2>Nuevo cliente</h2>
+            <div class="container">
+                <form action="" method="get" class="newClientForm">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name" required>
+
+                    <label for="email">Correo</label>
+                    <input type="email" name="email" id="email" required>
+
+                    <label for="number">Teléfono</label>
+                    <input type="number" name="number" id="number" required>
+
+
+                    <label for="company">Empresa</label>
+                    <input type="text" name="company" id="company" required>
+
+
+                    <input type="submit" value="AGREGAR CLIENTE" class="submit">
+                </form>
+            </div>
+        </section>
+        <section class="clientEdit">
+            <h2>Editar cliente</h2>
+            <div class="container">
+                <form action="" method="get" class="editClientForm">
+
+
+                    <input type="submit" value="GUARDAR CAMBIOS">
+                </form>
+        </section>
     </main>
+
+    <script src="main.js"></script>
 </body>
 </html>
